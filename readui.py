@@ -15,11 +15,11 @@ class MainPizza(QMainWindow):
     
     def __init__(self): 
         super(MainPizza, self).__init__()
-        loadUi("C:\\Users\\Admin\\Desktop\\global_ai_python_project\\about_pizza.ui", self)
+        loadUi("..\\about_pizza.ui", self)
 
         self.setGeometry(600,100,1000,800)
 
-        oImage = QImage("C:\\Users\\Admin\\Desktop\\global_ai_python_project\\Just.jpg")
+        oImage = QImage("..\\Just.jpg")
         sImage = oImage.scaled(QSize(1041,681))                   # resize Image to widgets size
         palette = QPalette()
         palette.setBrush(QPalette.Window, QBrush(oImage))                        
@@ -156,7 +156,7 @@ class MainPizza(QMainWindow):
 class Payment(QWidget):  
      def __init__(self): 
         super().__init__()
-        loadUi("C:\\Users\\Admin\\Desktop\\global_ai_python_project\\pay_pizza.ui", self)
+        loadUi("..\\pay_pizza.ui", self)
 
         self.setGeometry(600,100,1000,800)
 
